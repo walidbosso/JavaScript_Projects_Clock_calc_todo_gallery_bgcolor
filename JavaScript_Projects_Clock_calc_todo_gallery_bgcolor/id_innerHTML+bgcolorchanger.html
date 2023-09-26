@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="changeText(this)">wassup</h1>
+</body>
+
+<script>
+    function changeText(id){ //dak this yaeni h1
+     id.innerHTML = "new"; // donc kan qedro nbdelo ktaba li inner h1
+    }
+</script>
+<script>
+
+    /*Random background color- by javascriptkit.com
+    Visit JavaScript Kit (http://javascriptkit.com) for script
+    Credit must stay intact for use*/
+    
+    //Enter list of bgcolors:
+    var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
+    
+    document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+    </script>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .title {
+            margin-bottom: 3px;
+            text-align: center;
+            width: 100%;
+            color: black;
+            font-weight: bold;
+            border: solid black 2px;
+            background-color: wheat;
+        }
+        input[type="button"]{
+            width: 100%;
+            border: solid black 2px;
+            color :aliceblue;
+            background-color: black;
+        }
+
+        input[type="text"]{
+            width: 100%;
+            border: solid black 2px;
+            color :black;
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Calculator</div>
+    <table border="0">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="c" onclick="clr()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="display('1')"></td>
+            <td><input type="button" value="2" onclick="display('2')"></td>
+            <td><input type="button" value="3" onclick="display('3')"></td>
+            <td><input type="button" value="/" onclick="display('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="display('4')"></td>
+            <td><input type="button" value="5" onclick="display('5')"></td>
+            <td><input type="button" value="6" onclick="display('6')"></td>
+            <td><input type="button" value="-" onclick="display('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="display('7')"></td>
+            <td><input type="button" value="8" onclick="display('8')"></td>
+            <td><input type="button" value="9" onclick="display('9')"></td>
+            <td><input type="button" value="+" onclick="display('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="display('.')"></td>
+            <td><input type="button" value="0" onclick="display('0')"></td>
+            <td><input type="button" value="=" onclick="equate()"></td>
+            <td><input type="button" value="*" onclick="display('*')"></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        function clr() {
+            document.getElementById("result").value = ""; // dak input ldakhl = walo
+        }
+        function display(val) {
+            document.getElementById("result").value += val; //input text id = value, baynama div kan emlo innerHTML
+
+        }
+        function equate() {
+            let x = document.getElementById("result").value;
+            let y = eval(x);
+            document.getElementById("result").value = y;
+        }
+    </script>
+</body>
+
+</html>
