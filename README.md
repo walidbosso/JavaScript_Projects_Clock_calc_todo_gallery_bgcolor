@@ -31,23 +31,18 @@
 This repository contains a collection of small JavaScript projects, each showcasing different functionalities:
 
 1. **Calculator**
-   - Initial commit: 4 months ago
    - Simple calculator implementation.
 
 2. **Clock**
-   - Initial commit: 4 months ago
    - Interactive clock implemented in JavaScript.
 
 3. **On Mouse Over Gallery**
-   - Initial commit: 4 months ago
    - Gallery of images that change on mouseover.
 
 4. **To-Do List**
-   - Initial commit: 4 months ago
    - Basic to-do list application.
 
 5. **Background Color Changer**
-   - Initial commit: 4 months ago
    - Changes the background color dynamically.
 
 ## Topics Covered
